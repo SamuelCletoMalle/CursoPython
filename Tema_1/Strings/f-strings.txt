@@ -1,0 +1,127 @@
+Lectura: f-strings en Python
+¿Qué son las f-strings?
+Las f-strings (formatted string literals) son una forma moderna y elegante de insertar valores de variables dentro de cadenas de texto en Python. Fueron introducidas en Python 3.6 y se han convertido en la manera preferida de formatear strings por su simplicidad y legibilidad.
+
+La "f" al inicio significa "formatted" (formateado), y nos permite escribir código más limpio y fácil de leer.
+
+
+
+Sintaxis básica
+Para crear una f-string, simplemente coloca la letra f antes de las comillas y usa llaves {} para insertar variables o expresiones:
+
+nombre = "Ana"
+saludo = f"Hola, {nombre}"
+print(saludo)  # Resultado: Hola, Ana
+
+
+Como puedes ver, las f-strings son:
+
+✅ Más fáciles de leer
+
+✅ Más cortas
+
+✅ No necesitas convertir números a strings manualmente
+
+✅ Menos propensas a errores
+
+
+
+Ejemplos prácticos
+Variables simples
+ciudad = "Madrid"
+temperatura = 25
+ 
+print(f"La temperatura en {ciudad} es de {temperatura}°C")
+# Resultado: La temperatura en Madrid es de 25°C
+
+
+Múltiples variables
+nombre = "Laura"
+apellido = "García"
+edad = 22
+carrera = "Ingeniería"
+ 
+print(f"{nombre} {apellido} tiene {edad} años y estudia {carrera}")
+# Resultado: Laura García tiene 22 años y estudia Ingeniería
+
+
+Formato de números
+Las f-strings también permiten controlar cómo se muestran los números:
+
+Decimales
+pi = 3.14159265359
+ 
+print(f"Pi con 2 decimales: {pi:.2f}")
+# Resultado: Pi con 2 decimales: 3.14
+ 
+print(f"Pi con 4 decimales: {pi:.4f}")
+# Resultado: Pi con 4 decimales: 3.1416
+
+
+Números grandes
+poblacion = 47450795
+ 
+print(f"Población: {poblacion:,}")
+# Resultado: Población: 47,450,795
+
+
+Porcentajes
+aprobados = 0.85
+ 
+print(f"Porcentaje de aprobados: {aprobados:.1%}")
+# Resultado: Porcentaje de aprobados: 85.0%
+
+
+Alineación y espaciado
+Puedes controlar el ancho y la alineación del texto:
+
+nombre = "Ana"
+edad = 20
+ 
+# Alinear a la derecha con ancho de 10 caracteres
+print(f"{nombre:>10} tiene {edad} años")
+# Resultado:        Ana tiene 20 años
+ 
+# Alinear a la izquierda
+print(f"{nombre:<10} tiene {edad} años")
+# Resultado: Ana        tiene 20 años
+ 
+# Centrar
+print(f"{nombre:^10} tiene {edad} años")
+# Resultado:    Ana     tiene {edad} años
+
+
+Consejos importantes
+Siempre usa la "f" antes de las comillas: f"texto" no "texto"
+
+Las llaves son solo para variables y expresiones: No uses llaves para texto normal
+
+Puedes usar comillas simples o dobles: f'texto' y f"texto" funcionan igual
+
+Para strings multilínea, usa triple comillas:
+
+nombre = "Juan"
+edad = 30
+ 
+mensaje = f"""
+Datos del usuario:
+- Nombre: {nombre}
+- Edad: {edad}
+"""
+print(mensaje)
+
+
+Resumen
+Las f-strings son la forma más moderna y recomendada de formatear strings en Python porque:
+
+Son legibles: El código es fácil de entender
+
+Son concisas: Menos código para escribir
+
+Son rápidas: Funcionan más rápido que otros métodos
+
+Son flexibles: Permiten expresiones y formato avanzado
+
+Practica usando f-strings en todos tus programas y verás cómo tu código se vuelve más limpio y profesional.
+
+¡En la siguiente clase te enfrentarás a un ejercicio de codificación donde podrás poner en práctica las funciones y las f-strings! 
